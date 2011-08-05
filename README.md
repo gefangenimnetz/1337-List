@@ -8,4 +8,4 @@ node.js
 
 ## Adding tasks
 ### For h4xX0rz
-  -n 'Task Title' -d 'Description of the task. It supports Markdown. **OMG**'
+    -n 'Task Title' -d 'Description of the task. It supports Markdown. **OMG**'
