@@ -25,7 +25,7 @@ app.get('/', function(req, res){
 
 // Alle Listen (für den jeweiligen User)
 app.get('/lists/', function(req, res){
-  res.render('lists.jade'); 
+  res.render('lists.jade', {layout: false}); 
 });
 
-app.listen(13337);
+app.listen(process.env.C9_PORT, '0.0.0.0');
