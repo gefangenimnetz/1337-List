@@ -28,4 +28,4 @@ app.get('/lists/', function(req, res){
   res.render('lists.jade', {layout: false}); 
 });
 
-app.listen(process.env.C9_PORT, '0.0.0.0');
+app.listen(13337);
