@@ -28,4 +28,9 @@ app.get('/lists/', function(req, res){
   res.render('lists.jade', {layout: false}); 
 });
 
-app.listen(13337);
+// Cloud9IDE special Port and host
+if (process.env.C9_PORT) {
+  app.listen(process.env.C9_PORT, '0.0.0.0');
+} else {
+  app.listen(13337);
+}
